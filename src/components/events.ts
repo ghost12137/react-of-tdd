@@ -1,4 +1,5 @@
 import fetch from './fetch'
+import test from './fetch';
 
 export default {
   async getPostsList() {
