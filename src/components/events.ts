@@ -1,5 +1,5 @@
 import fetch from './fetch'
-import test from './fetch';
+import sum from './sum';
 
 export default {
   async getPostsList() {
