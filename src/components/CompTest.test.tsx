@@ -1,5 +1,5 @@
 import React from 'react';
-import {render, screen, waitFor} from '@testing-library/react';
+import { render, screen, fireEvent, act } from '@testing-library/react';
 
 import CompTest from './CompTest';
 import { fetchPosts } from './fetchOnce';
@@ -8,13 +8,14 @@ jest.mock('./fetchOnce');
 describe('CompTest', () => {
   test('renders CompTest componet', async () => {
 
-    const result = await fetchPosts('asd');
+    render(<CompTest />);
+    const btn = await screen.findByTestId('click');
+    expect(btn).toBeEnabled();
 
-    if (result.status === 200) {
-      console.log(result.data);
-    }
+    fireEvent.click(btn);
 
-    await render(<CompTest />);
-    screen.debug();
+    const text = await screen.findByText('显示');
+    console.log(text);
+    expect(text).toBeInTheDocument();
   });
 })
