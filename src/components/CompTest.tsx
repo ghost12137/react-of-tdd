@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { fetchPosts, MsgData } from './fetchOnce';
+import { fetchPosts, MsgData } from '../utils/fetchOnce';
 
 type Props = {};
 

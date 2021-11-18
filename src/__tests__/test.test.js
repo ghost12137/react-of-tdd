@@ -167,7 +167,7 @@ test('测试jest.fn()返回Promise', async () => {
 })
 
 
-import fetch from '../components/fetch'
+import fetch from '../utils/fetch'
 
 test('fetchPostsList中的回调函数应该能够被调用 ',async () => {
   expect.assertions(1)

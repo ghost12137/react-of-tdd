@@ -1,6 +1,6 @@
-import fetch from '../components/fetch'
+import fetch from '../utils/fetch'
 // jest.mock
-import events from '../components/events'
+import events from '../utils/events'
 
 // mock api
 jest.mock('../components/fetch.ts')

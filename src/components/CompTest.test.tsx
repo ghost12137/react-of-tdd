@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, fireEvent, act } from '@testing-library/react';
 
 import CompTest from './CompTest';
-import { fetchPosts } from './fetchOnce';
+import { fetchPosts } from '../utils/fetchOnce';
 
 jest.mock('./fetchOnce');
 describe('CompTest', () => {
