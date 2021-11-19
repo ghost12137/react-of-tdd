@@ -3,7 +3,7 @@ import fetch from '../utils/fetch'
 import events from '../utils/events'
 
 // mock api
-jest.mock('../components/fetch.ts')
+jest.mock('../utils/fetch')
 
 test('mock 整个fetch.ts模块', async () => {
   expect.assertions(2)

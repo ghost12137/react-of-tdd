@@ -4,7 +4,7 @@ import { render, screen, fireEvent, act } from '@testing-library/react';
 import CompTest from './CompTest';
 import { fetchPosts } from '../utils/fetchOnce';
 
-jest.mock('./fetchOnce');
+jest.mock('../utils/fetchOnce');
 describe('CompTest', () => {
   test('renders CompTest componet', async () => {
 
