@@ -15,7 +15,7 @@ describe('CompTest', () => {
     fireEvent.click(btn);
 
     const text = await screen.findByText('显示');
-    console.log(text);
+    // console.log(text);
     expect(text).toBeInTheDocument();
   });
 })
